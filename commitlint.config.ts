@@ -58,6 +58,7 @@ export default {
         'locales',
         'middlewares',
         'mocks',
+        'models',
         'pages',
         'plugins',
         'public',
