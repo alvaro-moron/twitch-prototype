@@ -68,6 +68,7 @@ export default {
         'services',
         'stores',
         'styles',
+        'svgs',
         'testing',
         'todo',
         'types',
