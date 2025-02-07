@@ -1,0 +1,8 @@
+{
+  "navbar": {
+    "webTitle": "MITWITCH",
+    "searchPlaceholder": "Search",
+    "loginButtonText": "Log In",
+    "signupButtonText": "Sign Up"
+  }
+}
