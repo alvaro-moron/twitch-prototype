@@ -11,4 +11,13 @@ export default defineNuxtConfig({
       twitchDefaultApi: process.env.BASIC_TWITCH_API_URL,
     },
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "sass:map"; @import "assets/styles/mixin.scss";',
+        },
+      },
+    },
+  },
 })
