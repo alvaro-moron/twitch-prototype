@@ -34,9 +34,9 @@ export class connectWithTwitchApi {
   //   }
   // }
 
-  async useGetHttpMethod<T>(endpoint: string): Promise<T | undefined> {
+  async useGetHttpMethod<T>(endpoint: string): Promise<T> {
     try {
-      const response: T = await $fetch(
+      const response = await $fetch<T>(
         `${this.config.public.twitchDefaultApi}${endpoint}`,
         {
           method: 'GET',
@@ -62,11 +62,9 @@ export class connectWithTwitchApi {
             }, 250)
           )
         }
-        alert('Ha ocurrido un error, inténtelo más tarde.')
-        return undefined
+        throw new Error('Ha ocurrido un error, inténtelo más tarde.')
       }
-      alert('Error inesperado')
-      return undefined
+      throw new Error('Error inesperado')
     }
   }
 }
