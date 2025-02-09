@@ -12,7 +12,6 @@ const api = new connectWithTwitchApi()
 const popularStreams = await api.useGetHttpMethod<arrayStreams>(
   'helix/streams?first=8&type=live&language=es&sort=viewer_count'
 )
-console.log(popularStreams)
 </script>
 <template>
   <section class="lateral-container">
