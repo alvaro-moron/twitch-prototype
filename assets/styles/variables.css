@@ -1,6 +1,9 @@
 :root {
   --c-background: #0e0e10;
   --c-background-navbar: #18181b;
+  --c-background-lateral-menu: #1f1f23;
   --c-background-button: #2f2f35;
   --c-principal: #34bced;
+
+  --d-navbar-height: 3em;
 }
