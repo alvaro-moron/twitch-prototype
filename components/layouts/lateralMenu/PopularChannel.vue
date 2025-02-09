@@ -4,7 +4,6 @@ import type { Channels } from '@/interfaces/channels'
 import type { Streams } from '@/interfaces/streams'
 
 const props = defineProps<{ streamData: Streams }>()
-console.log(props)
 
 type arrayChannel = {
   data: Channels[]
