@@ -14,6 +14,7 @@ import searcher from '@/svgs/search24.vue'
 .searcher-container {
   @include flex($align: stretch);
   &__input {
+    width: 20em;
     padding: 0.2em;
     border: 0.0625rem solid #67676b;
   }
