@@ -1,0 +1,14 @@
+{
+  "home": {
+    "gridOne": {
+      "title": "Popular live channels in Spanish"
+    },
+    "gridTwo": {
+      "title": "Popular live channels in English"
+    },
+    "gridCategories": {
+      "title": "Categories we think you will like"
+    },
+    "showMore": "Show more"
+  }
+}
