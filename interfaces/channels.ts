@@ -12,3 +12,7 @@ export interface Channels {
   title: string
   started_at: Date
 }
+
+export type arrayChannels = {
+  data: Channels[]
+}

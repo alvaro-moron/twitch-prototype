@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { navbar } from '@/mocks/navbar.json'
-import twitchIcon from '@/assets/images/twitch-logo.webp'
+import twitchIcon from '@/assets/images/twitch-logo-blue.webp'
 import threeDots from '@/svgs/threeDots24.vue'
 import searcher from '@/components/layouts/navbar/Searcher.vue'
 import mainButton from '@/components/ui/MainButton.vue'
@@ -44,6 +44,7 @@ import crown from '@/svgs/crown24.vue'
   padding: 0 0.5rem;
   background-color: var(--c-background-navbar);
   position: fixed;
+  top: 0;
   &__left {
     @include flex($gap: 1em);
   }

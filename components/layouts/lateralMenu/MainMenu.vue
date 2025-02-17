@@ -1,12 +1,8 @@
 <script setup lang="ts">
 import { lateralMenu } from '@/mocks/lateral-menu.json'
 import { connectWithTwitchApi } from '@/services/ConnectWithTwitchApi'
-import PopularChannel from '~/components/layouts/lateralMenu/PopularChannel.vue'
-import type { Streams } from '@/interfaces/streams'
-
-type arrayStreams = {
-  data: Streams[]
-}
+import PopularChannel from '@/components/layouts/lateralMenu/PopularChannel.vue'
+import type { arrayStreams } from '@/interfaces/streams'
 
 const api = new connectWithTwitchApi()
 const popularStreams = await api.useGetHttpMethod<arrayStreams>(
@@ -29,13 +25,14 @@ const popularStreams = await api.useGetHttpMethod<arrayStreams>(
 </template>
 <style scoped lang="scss">
 .lateral-container {
-  width: 20em;
+  width: var(--d-lateral-menu-width);
   height: 100%;
-  background-color: var(--c-background-lateral-menu);
-  margin-top: var(--d-navbar-height);
+  background-color: var(--c-background);
   position: fixed;
+  left: 0;
   &__h2 {
     margin: 0.5em 0.5em 0.25em;
+    font-size: 1.125em;
   }
   &__channel {
     width: 100%;
@@ -47,7 +44,7 @@ const popularStreams = await api.useGetHttpMethod<arrayStreams>(
     width: 100%;
   }
   @include responsive(48em) {
-    width: 4em;
+    width: var(--d-lateral-menu-width-mobile);
     &__h2 {
       display: none;
     }

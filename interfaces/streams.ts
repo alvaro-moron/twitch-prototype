@@ -15,3 +15,7 @@ export interface Streams {
   tag_ids: string
   is_mature: boolean
 }
+
+export type arrayStreams = {
+  data: Streams[]
+}

@@ -4,6 +4,17 @@
   --c-background-lateral-menu: #1f1f23;
   --c-background-button: #2f2f35;
   --c-principal: #34bced;
+  --c-white-fonts: #eeeef0;
+  --c-grey-fonts: #adadb8;
 
   --d-navbar-height: 3em;
+  --d-lateral-menu-width: 15em;
+  --d-lateral-menu-width-mobile: 4em;
+  --d-lateral-chat-width: 21.25em;
+
+  --s-font-higher: 1.125em;
+  --s-font-high: 1.0625em;
+  --s-font-normal: 1em;
+  --s-font-less: 0.9375em;
+  --s-font-least: 0.875em;
 }
