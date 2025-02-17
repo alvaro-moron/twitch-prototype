@@ -2,8 +2,6 @@
 import { connectWithTwitchApi } from '@/services/ConnectWithTwitchApi'
 import type { arrayStreams } from '@/interfaces/streams'
 import type { arrayChannels } from '@/interfaces/channels'
-// import mainButton from '@/components/ui/MainButton.vue'
-// import { stream } from '@/mocks/stream.json'
 import titleBlock from '@/components/ui/stream/titleBlock.vue'
 import moreBlock from '@/components/ui/stream/moreBlock.vue'
 
@@ -23,8 +21,6 @@ const streamData = await api.useGetHttpMethod<arrayStreams>(
 const channelData = await api.useGetHttpMethod<arrayChannels>(
   `helix/search/channels?query=${name}&live_only=true&first=1`
 )
-// console.log(streamData.data)
-// console.log(channelData.data)
 </script>
 <template>
   <NuxtLayout :name="streamLayout">
