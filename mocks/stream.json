@@ -1,0 +1,11 @@
+{
+  "stream": {
+    "buttons": {
+      "follow": "Follow",
+      "subscribe": "Subscribe"
+    },
+    "about": {
+      "title": "About"
+    }
+  }
+}
