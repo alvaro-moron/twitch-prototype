@@ -21,10 +21,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@nuxt/image'],
-  app: {
-    baseURL: '/myTwitchMoron',
-  },
   nitro: {
-    preset: 'static',
+    preset: 'vercel',
   },
 })
