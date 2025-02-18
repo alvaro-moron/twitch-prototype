@@ -25,13 +25,15 @@ const channelData = await api.useGetHttpMethod<arrayChannels>(
 <template>
   <NuxtLayout :name="streamLayout">
     <section class="stream-container">
-      <iframe
-        :src="`https://player.twitch.tv/?channel=${name}&parent=moron-twitch.vercel.app`"
-        height="754"
-        width="1340"
-        allowfullscreen
-      >
-      </iframe>
+      <div class="stream-container__video-embedded">
+        <iframe
+          :src="`https://player.twitch.tv/?channel=${name}&parent=moron-twitch.vercel.app`"
+          height="100%"
+          width="100%"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
       <div class="stream-container__all-text">
         <titleBlock
           :stream-data="streamData.data[0]"
@@ -44,9 +46,15 @@ const channelData = await api.useGetHttpMethod<arrayChannels>(
 </template>
 <style scoped lang="scss">
 .stream-container {
+  &__video-embedded {
+    aspect-ratio: 16 / 9;
+  }
   &__all-text {
     @include flex(column, $align: normal, $gap: 1em);
     padding: 0.75em;
+  }
+  @include responsive(48em) {
+    height: 15vh;
   }
 }
 </style>
