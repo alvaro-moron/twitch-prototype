@@ -85,7 +85,12 @@ onMounted(() => {
   }
   &__first-line {
     width: 100%;
-    @include flex($align: flex-start, $justify: space-between, $wrap: wrap);
+    @include flex(
+      $align: flex-start,
+      $justify: space-between,
+      $wrap: wrap,
+      $gap: 0.5em
+    );
   }
   &__h1 {
     font-size: var(--s-font-higher);
@@ -105,7 +110,12 @@ onMounted(() => {
   }
   &__second-line {
     width: 100%;
-    @include flex($align: flex-start, $justify: space-between, $gap: 0.5em);
+    @include flex(
+      $align: flex-start,
+      $justify: space-between,
+      $wrap: wrap,
+      $gap: 0.5em
+    );
   }
   &__time-things {
     @include flex($gap: 0.5em);
@@ -130,6 +140,9 @@ onMounted(() => {
     padding: 0.5em;
     font-size: var(--s-font-least);
     color: var(--c-grey-fonts);
+  }
+  @include responsive(48em) {
+    @include flex($align: normal, $justify: space-between, $gap: 0.5em);
   }
 }
 </style>

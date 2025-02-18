@@ -65,7 +65,7 @@ const UserData = await api.useGetHttpMethod<arrayUsers>(
     border: 0.0625em solid #35353b;
   }
   &__social-container {
-    @include flex($align: normal, $justify: normal, $gap: 1em);
+    @include flex($align: normal, $justify: normal, $wrap: wrap, $gap: 1em);
   }
   &__social-item {
     @include flex($justify: normal, $gap: 0.5em);
