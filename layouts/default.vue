@@ -21,7 +21,7 @@ import MainMenu from '@/components/layouts/lateralMenu/MainMenu.vue'
   &__page-content {
     padding: 0 0 0 var(--d-lateral-menu-width);
     @include responsive(48em) {
-      padding-left: var(--d-lateral-menu-width-mobile);
+      padding: 0 0 0 var(--d-lateral-menu-width-mobile);
     }
   }
 }
