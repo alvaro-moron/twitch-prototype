@@ -25,13 +25,13 @@ const channelData = await api.useGetHttpMethod<arrayChannels>(
 <template>
   <NuxtLayout :name="streamLayout">
     <section class="stream-container">
-      <!-- <iframe
-        :src="`https://player.twitch.tv/?channel=${name}&parent=localhost:3000`"
-        height="720"
-        width="1280"
+      <iframe
+        :src="`https://player.twitch.tv/?channel=${name}&parent=moron-twitch.vercel.app`"
+        height="754"
+        width="1340"
         allowfullscreen
       >
-      </iframe> -->
+      </iframe>
       <div class="stream-container__all-text">
         <titleBlock
           :stream-data="streamData.data[0]"
