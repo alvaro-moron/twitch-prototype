@@ -32,10 +32,12 @@ defineProps<{ title: String; streamData: arrayStreams }>()
 .stream-grid-container {
   @include flex(column, $align: flex-start, $gap: 0.5em);
   &__cards-container {
-    @include flex($gap: 1.5em);
+    @include flex($justify: flex-start, $wrap: wrap, $gap: 1.5em);
+    height: 19.0625em;
+    overflow: hidden;
   }
   &__card {
-    width: calc(100% / 3);
+    width: 18.75em;
   }
   &__line-container {
     width: 100%;
@@ -57,6 +59,14 @@ defineProps<{ title: String; streamData: arrayStreams }>()
   &__more-arrow {
     width: fit-content;
     height: fit-content;
+  }
+  @include responsive(48em) {
+    &__cards-container {
+      height: 17.0625rem;
+    }
+    &__card {
+      width: 15.75rem;
+    }
   }
 }
 </style>
