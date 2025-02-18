@@ -21,10 +21,12 @@ defineProps<{ title: String; categorieData: arrayCategories }>()
 .stream-grid-container {
   @include flex(column, $align: flex-start, $gap: 0.5em);
   &__cards-container {
-    @include flex($gap: 1.5em);
+    @include flex($justify: flex-start, $wrap: wrap, $gap: 1.5em);
+    height: 19.125em;
+    overflow: hidden;
   }
   &__card {
-    width: calc(100% / 6);
+    width: 9.375em;
   }
 }
 </style>
