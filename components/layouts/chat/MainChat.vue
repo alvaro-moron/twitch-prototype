@@ -5,7 +5,7 @@ const name = route.params.name
 <template>
   <section class="chat-container">
     <iframe
-      :src="`https://www.twitch.tv/embed/${name}/chat?parent=moron-twitch.vercel.app&theme=dark`"
+      :src="`https://www.twitch.tv/embed/${name}/chat?parent=moron-twitch.vercel.app&theme=dark&darkpopout`"
       height="100%"
       width="100%"
       frameborder="0"
